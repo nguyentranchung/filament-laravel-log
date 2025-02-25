@@ -4,6 +4,7 @@ namespace Saade\FilamentLaravelLog;
 
 use Closure;
 use Filament\Contracts\Plugin;
+use Filament\FilamentManager;
 use Filament\Panel;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Saade\FilamentLaravelLog\Pages\ViewLog;
@@ -40,7 +41,7 @@ class FilamentLaravelLogPlugin implements Plugin
         return app(static::class);
     }
 
-    public static function get(): static
+    public static function get(): FilamentManager | static
     {
         return filament(app(static::class)->getId());
     }
