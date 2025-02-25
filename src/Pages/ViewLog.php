@@ -25,7 +25,7 @@ class ViewLog extends Page
         return $form
             ->schema([
                 Forms\Components\Select::make('logFile')
-                    ->label(false)
+                    ->label(null)
                     ->placeholder(fn (): string => __('log::filament-laravel-log.page.form.placeholder'))
                     ->live()
                     ->options(
@@ -59,6 +59,7 @@ class ViewLog extends Page
         }
 
         File::put($this->logFile, '');
+
         $this->refresh();
     }
 
