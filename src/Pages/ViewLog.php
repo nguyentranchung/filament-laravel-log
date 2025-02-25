@@ -43,6 +43,7 @@ class ViewLog extends Page
     {
         if (! $this->logFile || ! $this->fileResidesInLogDirs($this->logFile)) {
             $this->logFile = null;
+
             return '';
         }
 
@@ -53,6 +54,7 @@ class ViewLog extends Page
     {
         if (! $this->logFile || ! $this->fileResidesInLogDirs($this->logFile)) {
             $this->logFile = null;
+
             return;
         }
 
