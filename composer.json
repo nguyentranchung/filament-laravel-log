@@ -1,5 +1,5 @@
 {
-    "name": "saade/filament-laravel-log",
+    "name": "nguyentranchung/filament-laravel-log",
     "description": "Access laravel.log file through Filament admin panel",
     "license": "MIT",
     "keywords": [
